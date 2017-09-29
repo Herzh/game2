@@ -1,6 +1,5 @@
 
 start:
-  - play morningBGM:
   - show school_morning: WITH FADE
   - show deuzi: happy AT CENTER WITH FADE
   - deuzi says: Welcome to our Tutorial Game!
@@ -29,85 +28,33 @@ graduation:
   - jair says: Let's keep in touch!
   - marco says: And don't be scared of making it complex!
   - deuzi says: You can do it!
+  
   - effect ROLLINGCREDITS:
     endGame: true
     text:
-      - RenJS developed by
-      - lunafromthemoon
+      - Desarrollado por
+      - Diwem
       - null
-      - Inspired by Ren'Py
-      - Powered by PhaserJS
+      - Escrito por
+      - Herzh
       - null
+      - Editado por
+      - Suaste
       - null
-      - Thanks for playing
-      - The Tutorial Game
+      - Diseño por
+      - Mauricio
       - null
-      - written by
-      - lunafromthemoon
+      - Musica por
+      - Other
       - null
-      - edited by
-      - rumpelcita
+      - Editado por
+      - Suaste
       - null
-      - background art and cgs by
-      - konett
+      - Diseño por
+      - Mauricio
       - null
-      - characters by
-      - Shida
+      - Musica por
+      - Other
+      - Diseños Mauricio
       - null
-      - music by
-      - Evan Schaeffer
-
-invitationScene:
-  - show phone2: AT 400,300
-  - play ringtoneSFX:
-  - jair says: Told you! It's probably Deuzilene trying to convince you to go to that party.
-  - choice:
-    - Pick up the phone:
-      - deuzi says: Hey! I'm glad you're not asleep yet! 
-      - deuzi says: There's this party tonight and I wanted you to come.
-      - deuzi says: So what do you say?
-      - choice:
-        - Sounds like fun!:
-          - scene: partyScene
-        - I'm really tired:
-          - deuzi says: Oh well, next time it is then. Have a good night!
-    - Let it ring:
-      - jair says: Brutal! You ain't even picking up.
-  - scene: dormsScene
-
-varsScene:
-  # numeric variables
-  - var score: 0
-  - var extraPoints: 3
-  - var score: "{score} + 10"
-  - var bonification: "{extraPoints} - 1"
-  - var totalScore: "({score} + {extraPoints}) * {bonification}"
-  # boolean variables
-  - var lightOn: true
-  - var lightOff: "!{lightOn}"
-  - var lampOn: true
-  - allLightsOn: "{lightOn} && {lampOn}"
-  - canRead: "{lightOn} || {lampOn}"
-  - highScore: "{score} > 10"
-  - perfectScore: "{score} == {maxScore}"
-  - lowScore: "{score} <= {maxScore} / 2"
-  # string variables
-  - var name: Marco
-  - var surname: Da Silva
-  - var wholeName: "Mr. {name} {surname}"
-  - text: "Hello {wholeName}, your score is {score}!"
-  # if
-  - if ({lightOn}):
-    - text: The light is on.
-  - else:
-    - text: The light is off.
-  - deuzi says: Let's check your score.
-  - deuzi says: "You have {score} points."
-  - if ({score > 10}):
-    - show deuzi: happy
-    - deuzi says: You did great! Congratulations!
-    - if ({name} == {favouriteStudent}):
-      - deuzi says: That's why you're my favourite student.
-  - else:
-    - deuzi says: It's not bad, but you'll have to study a bit more next time.
-
+      - music por defecto
