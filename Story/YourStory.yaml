@@ -3,13 +3,6 @@ start:
   - show school_morning: WITH FADE
   - show deuzi: happy AT CENTER WITH FADE
   - deuzi says: Welcome to our Tutorial Game!
-  - deuzi says: My name is Deuzilene and I'll be your guide.
-  - show deuzi: normal
-  - deuzi says: So you want to make a Visual Novel.
-  - deuzi says: With RenJS you can easily make games just like this one.
-  - deuzi says: RenJS is inspired by Ren'Py and based on PhaserJS.
-  - deuzi says: If you are familiar with any of those you have an advantage.
-  - deuzi says: And if not...
   - show deuzi: happy
   - scene: graduation
   
@@ -18,16 +11,8 @@ graduation:
   - show deuzi: AT 300,600 WITH FADE
     flipped: false
   - show liz: happy AT 500,600 WITH FADE
-  - show jair: happy AT RIGHT WITH FADE
-  - show marco: happy AT LEFT WITH FADE
-  - deuzi says: So, this is the big day.
-  - deuzi says: You can now go out in the world and write your own stories.
-  - show deuzi: happy
-  - deuzi says: I'm so proud of you!
   - liz says: I'm looking forward to read all of your stories.
-  - jair says: Let's keep in touch!
-  - marco says: And don't be scared of making it complex!
-  - deuzi says: You can do it!
+
   
   - effect ROLLINGCREDITS:
     endGame: true
